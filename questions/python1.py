@@ -36,7 +36,12 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-	return ""
+	if len(input1) > len(input2):
+		return input1
+	elif len(input1) < len(input2):
+		return input2
+	else:
+		return input1 + " " + input2
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -60,7 +65,14 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
-	return "null"
+	if arg1/3 :
+		return "fizz"
+	elif arg1/5 :
+		return "buzz"
+	elif arg1/3 and arg1/5:
+		return "fizzbuzz"
+	else:
+		return "null"
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -79,7 +91,11 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    return 0
+	number_of_vowels = 0
+	for char in input:
+		if char in "aeiouAEIOU":
+			number_of_vowels= number_of_vowels +1
+	return number_of_vowels
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -102,6 +118,7 @@ def three(input):
 
 
 def four(input):
+	
     return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -122,7 +139,29 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+		if input == 1:
+			return 1
+		elif input == 2:
+			return (2*1)
+		elif input == 3:
+			return (3*2*1)
+		elif input == 4:
+			return (4*3*2*1)
+		elif input == 5:
+			return (5*4*3*2*1)
+		elif input == 6:
+			return (6*5*4*3*2*1)
+		elif input == 7:
+			return (7*6*5*4*3*2*1)
+		elif input == 8:
+			return (8*7*6*5*4*3*2*1)
+		elif input == 9:
+			return (9*8*7*6*5*4*3*2*1)
+		elif input == 10:
+			return (10*9*8*7*6*5*4*3*2*1)
+		else: 
+			return "number is not in range"
+		
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -221,7 +260,13 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
+	word1= "bert"
+	word2 = "bert"
+	if nine.count("bert") == 2:
+		nine[nine.split(word1)+ len(word1):nine.split(word2)]
+		return nine
+	else:
+		" "
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
